@@ -21,7 +21,14 @@ import { useMachine } from '@xstate/react'
 import { useMedia } from '../hooks/useMedia'
 
 const Piano = React.lazy(() => import('../components/Piano'))
-const chordNames = ['major', 'minor']
+const chordNames = [
+  'major',
+  'minor',
+  'maj7',
+  'min7',
+  '7',
+  'dim',
+]
 const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
 
 const chords = notes.reduce(
@@ -415,3 +422,4 @@ const Index = () => {
 }
 
 export default Index
+
