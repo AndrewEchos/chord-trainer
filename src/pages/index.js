@@ -26,10 +26,9 @@ const chordNames = [
   'minor',
   'maj7',
   'min7',
-  '7',
-  'dim',
+  '7'
 ]
-const notes = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']
+const notes = ['C', 'C#', 'Db', 'D', 'D#', 'Eb', 'E', 'F', 'F#', 'Gb', 'G', 'G#', 'Ab', 'A', 'A#', 'Bb', 'B']
 
 const chords = notes.reduce(
   (cum, note) => cum.concat(...chordNames.map(name => chord(`${note}${name}`))),
@@ -333,9 +332,7 @@ const Index = () => {
             {state.matches('playing') && (
               <>
                 <Text sx={{ fontSize: [80, 120], fontWeight: 'bold' }}>
-                  {state.context.currentChord.name
-                    .replace(/\s+minor/, 'm')
-                    .replace(/\s+major/, '')}
+                  {state.context.currentChord.symbol
                 </Text>
               </>
             )}
@@ -422,4 +419,5 @@ const Index = () => {
 }
 
 export default Index
+
 
