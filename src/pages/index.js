@@ -333,10 +333,9 @@ const Index = () => {
               <>
                 <Text sx={{ fontSize: [80, 120], fontWeight: 'bold' }}>
                   {state.context.currentChord.name
-                    .replace(/\s+major\s+seventh/, '△7')
-                    .replace(/\s+minor\s+seventh/, '-7')
-                    .replace(/\s+dominant\s+seventh/, '7')
-                //    .replace(/\s+half-diminished\s+seventh/, 'ø7')
+                    .replace(/\s+major\s+seventh/, '△⁷')
+                    .replace(/\s+minor\s+seventh/, '-⁷')
+                    .replace(/\s+dominant\s+seventh/, '⁷')
                     .replace(/\s+minor/, '-')
                     .replace(/\s+major/, '')}
                 </Text>
@@ -425,6 +424,7 @@ const Index = () => {
 }
 
 export default Index
+
 
 
 
