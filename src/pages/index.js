@@ -332,7 +332,9 @@ const Index = () => {
             {state.matches('playing') && (
               <>
                 <Text sx={{ fontSize: [80, 120], fontWeight: 'bold' }}>
-                  {state.context.currentChord?.symbol || '...loading chord...'}
+                  {state.context.currentChord && state.context.currentChord.symbol
+                    ? state.context.currentChord.symbol
+                    : '…loading chord…'}
                 </Text>
               </>
             )}
@@ -419,6 +421,7 @@ const Index = () => {
 }
 
 export default Index
+
 
 
 
