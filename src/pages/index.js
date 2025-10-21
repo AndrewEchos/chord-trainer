@@ -332,9 +332,13 @@ const Index = () => {
             {state.matches('playing') && (
               <>
                 <Text sx={{ fontSize: [80, 120], fontWeight: 'bold' }}>
-                  {state.context.currentChord && state.context.currentChord.symbol
-                    ? state.context.currentChord.symbol
-                    : '…loading chord…'}
+                  {state.context.currentChord.name
+                    .replace(/\s+major\s+seventh/, 'maj7')
+                    .replace(/\s+minor\s+seventh/, 'm7')
+                    .replace(/\s+dominant\s+seventh/, '7')
+                //    .replace(/\s+half-diminished\s+seventh/, 'ø7')
+                    .replace(/\s+minor/, 'm')
+                    .replace(/\s+major/, '')}
                 </Text>
               </>
             )}
@@ -421,6 +425,7 @@ const Index = () => {
 }
 
 export default Index
+
 
 
 
