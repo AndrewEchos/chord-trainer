@@ -335,7 +335,7 @@ const Index = () => {
                   {state.context.currentChord.name
                     .replace(/#/, '♯')
                     .replace(/b/, '♭')
-                    .replace(/\s+major\s+seventh/, '△⁷')
+                    .replace(/\s+major\s+seventh/, '▵⁷')
                     .replace(/\s+minor\s+seventh/, '-⁷')
                     .replace(/\s+dominant\s+seventh/, '⁷')
                     .replace(/\s+minor/, '-')
@@ -426,6 +426,7 @@ const Index = () => {
 }
 
 export default Index
+
 
 
 
