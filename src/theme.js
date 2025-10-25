@@ -5,17 +5,17 @@ export default {
     monospace: 'Menlo, monospace',
   },
   colors: {
-    text: '#291F1E',
-    error: '#FE5F55',
-    success: '#59CD90',
-    white: '#ffffff',
-    lightGray: '#cccccc',
-    black: '#291F1E',
-    gray: '#333745',
+    text: '#fff4ea',
+    error: '#F6412D',
+    success: '#08A045',
+    white: '#FFF4EA',
+    lightGray: '#FEE8D2',
+    creamsicle: '#FF9800',
+    gray: '#FFD0A!',
   },
   buttons: {
     secondary: {
-      color: 'black',
+      color: 'creamsicle',
       bg: 'white',
       cursor: 'pointer',
       fontWeight: 'bold',
@@ -34,3 +34,4 @@ export default {
     },
   },
 }
+
