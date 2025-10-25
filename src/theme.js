@@ -10,7 +10,7 @@ export default {
     success: '#08A045',
     white: '#FFF4EA',
     lightGray: '#FEE8D2',
-    black: '#FF9800',
+    black: '#391c00',
     gray: '#FFD0A!',
   },
   buttons: {
@@ -34,5 +34,6 @@ export default {
     },
   },
 }
+
 
 
