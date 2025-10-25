@@ -10,12 +10,12 @@ export default {
     success: '#08A045',
     white: '#FFF4EA',
     lightGray: '#FEE8D2',
-    creamsicle: '#FF9800',
+    black: '#FF9800',
     gray: '#FFD0A!',
   },
   buttons: {
     secondary: {
-      color: 'creamsicle',
+      color: 'black',
       bg: 'white',
       cursor: 'pointer',
       fontWeight: 'bold',
@@ -34,4 +34,5 @@ export default {
     },
   },
 }
+
 
